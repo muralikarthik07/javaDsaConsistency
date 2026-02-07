@@ -4,20 +4,23 @@ import java.util.*;
 public class maxSubarraySum {
     public static void maxSubArraySum(int num[]){
         int maxSum = Integer.MIN_VALUE;
-        int currSum = Integer.MIN_VALUE;
+        int currSum = 0;
 
 
         for(int i = 0;i < num.length; i++){
             int start = i;
             for(int j= i; j< num.length; j++){
                 int end = j;
-                currSum = Integer.MIN_VALUE;
-                for(int k=start; k<end; k++){
-                     System.out.print(num[k]+ " ") ;
+                currSum = 0;
+                for(int k=start; k<=end; k++){
+                    currSum += num[k];
                 }
-               System.out.println();
+                if(currSum > maxSum){
+                    maxSum = currSum;
+                }
+                System.out.println(currSum);
             }
-            System.out.println();
+            System.out.println("max sum is: " +maxSum);
         }
     }
     public static void main(String args []){
