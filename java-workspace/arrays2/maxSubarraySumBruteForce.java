@@ -1,7 +1,7 @@
 package arrays2;
 import java.util.*;
 
-public class maxSubarraySum {
+public class maxSubarraySumBruteForce {
     public static void maxSubArraySum(int num[]){
         int maxSum = Integer.MIN_VALUE;
         int currSum = 0;
