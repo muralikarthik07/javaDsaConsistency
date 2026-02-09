@@ -10,13 +10,14 @@ public class maxSubArrayKadanes {
             if(currSum < 0){
                 currSum = 0;
             }
+            maxSum = Math.max(maxSum, currSum);
         }
 
-        maxSum = Math.max(maxSum, currSum);
+        
         System.out.println("MaxSum is: " +maxSum);
     }
     public static void main(String [] args){
-        int numbers[] = {-2,1,-3,4,-1,2,1,-5,4};
+        int numbers[] = {-2, -4, -3, -5, -4};
         kadanes(numbers);
     }
 }
