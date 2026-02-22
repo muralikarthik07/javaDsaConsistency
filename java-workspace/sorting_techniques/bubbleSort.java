@@ -1,4 +1,4 @@
-package sorting_techniques;
+
 
 public class bubbleSort {
     public static void bubbleSortAlgorithm(int arr[]){

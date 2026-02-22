@@ -1,4 +1,4 @@
-package sorting_techniques;
+
 import java.util.*;
 public class inbuiltSort {
 
